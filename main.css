@@ -1,3 +1,184 @@
+:root {
+  --anti-text-color: #ffffff;
+  --main-bg-color: #f2f2fe;
+  --neutral300: #d4d4d4;
+  --main-text-color: #222832;
+  --main-brand-color: #4444ef;
+  --light-brand-color: #cacafe;
+  --success-color-bg: #a2d6a2;
+  --failure-color-bg: #fabcbb;
+  --success-color-main: #129700;
+  --failure-color-main: #f44e4c;
+  --border-radius: 0.25rem;
+  --image-radius: 6.25rem;
+  --box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  --text-shadow: 0px 1px 0.33px rgba(0, 0, 0, 0.2),
+    0px 0.66px 0.66px rgba(0, 0, 0, 0.14), 0px 0.33px 1.66px rgba(0, 0, 0, 0.12);
+}
+
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+html {
+  background-color: var(--main-bg-color);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+
+.active {
+  color: var(--main-brand-color);
+}
+
+.buttonProject {
+  height: 1.75rem;
+  width:fit-content;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 0 0.6rem;
+  color: var(--anti-text-color);
+  background-color: var(--main-brand-color);
+  white-space: nowrap;
+}
+
+.imageLogo {
+  width: auto;
+  height: 1.7rem;
+  margin: 0.1rem 1rem -0.125rem 1rem;
+}
+
+.imageProject {
+    background-color: var(--neutral300);
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.frameImageProject {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral300);
+    border-radius: var(--image-radius);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid var(--neutral300);
+  padding: 1rem 0rem;
+  margin: 0rem 1.25rem;
+  justify-content: space-between;
+}
+
+.navigation_center {
+  display: flex;
+  flex-direction: row;
+}
+
+.menuItem {
+  margin: 0.1rem 1rem 0rem 1rem;
+}
+
+.container_a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 1rem 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--neutral300);
+    border-bottom: 0;
+    box-shadow: var(--box-shadow);
+    margin: 1rem auto 0 auto;
+    padding: 1rem 1rem 2rem 1rem;
+    width: 90%;
+    min-width: 40rem;
+    background-color: var(--anti-text-color);
+  }
+
+  .container_b {
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--neutral300);
+    border-bottom: 0;
+    box-shadow: var(--box-shadow);
+    padding: 1rem 1rem 0.5rem 1rem;
+    width: 80%;
+    background-color: var(--main-bg-color);
+  }
+    
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.cardTitle {
+    margin-left: 0.5rem;
+}
+
+.projectStatus{
+    display: flex;
+    flex-flow: column;
+    margin: 1rem 0.5rem 0rem 0.5rem;
+    align-items: center;
+}
+
+.progressBar_blank{
+    margin: 0.5rem 0rem;
+    width: 100%;
+    background-color: var(--light-brand-color);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--neutral300);
+    border-bottom: 0;
+    box-shadow: var(--box-shadow);
+}
+
+.progressBar_filled{
+    width: 15%;
+    background-color: var(--main-brand-color);
+    border-radius: var(--border-radius);
+    
+}
+
+.progressBar_text{
+    display: inline-block;
+    color: var(--anti-text-color);
+    width: 100%;
+    text-align: left;
+    padding: 0.3rem 0.3rem;
+    white-space: nowrap;
+    text-shadow: var(--text-shadow);
+}
+
+.scheduleOk_bg{
+    background-color: var(--success-color-bg);
+}
+.scheduleOk_main{
+    background-color: var(--success-color-main);    
+    width: 10%;
+}
+.scheduleBad_bg{
+    background-color: var(--failure-color-bg);
+}
+.scheduleBad_main{
+    background-color: var(--failure-color-main);
+    width: 90%;
 }
