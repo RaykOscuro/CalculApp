@@ -1,4 +1,7 @@
 :root {
+  --text-label: 400 0.75rem Inter;
+  --medium-weight: 550;
+  --text-label-color: rgba(0, 0, 0, 0.60);
   --anti-text-color: #ffffff;
   --main-bg-color: #f2f2fe;
   --neutral300: #d4d4d4;
@@ -9,6 +12,7 @@
   --failure-color-bg: #fabcbb;
   --success-color-main: #129700;
   --failure-color-main: #f44e4c;
+  --input-border:  rgba(0, 0, 0, 0.23);
   --border-radius: 0.25rem;
   --image-radius: 6.25rem;
   --box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
@@ -34,6 +38,11 @@ html {
   font-size: 16px;
   font-weight: 700;
   font-family: "Inter", sans-serif;
+}
+
+h3 {
+  display:inline-block;
+  width: 100%;
 }
 
 .active {
@@ -103,14 +112,14 @@ html {
     border: 1px solid var(--neutral300);
     border-bottom: 0;
     box-shadow: var(--box-shadow);
-    margin: 1rem auto 0 auto;
+    margin: 1rem auto 1rem auto;
     padding: 1rem 1rem 2rem 1rem;
     width: 90%;
     min-width: 40rem;
     background-color: var(--anti-text-color);
   }
 
-  .container_b {
+  .container_projectCard {
     display: flex;
     flex-direction: column;
     border-radius: var(--border-radius);
@@ -118,10 +127,23 @@ html {
     border-bottom: 0;
     box-shadow: var(--box-shadow);
     padding: 1rem 1rem 0.5rem 1rem;
-    width: 80%;
+    width: 90%;
     background-color: var(--main-bg-color);
   }
-    
+
+  .container_sub {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--neutral300);
+    border-bottom: 0;
+    box-shadow: var(--box-shadow);
+    padding: 1rem 1rem 0.5rem 1rem;
+    width: 90%;
+    background-color: var(--main-bg-color);  
+  }
+
 .title {
     display: flex;
     flex-direction: row;
@@ -180,5 +202,47 @@ html {
 }
 .scheduleBad_main{
     background-color: var(--failure-color-main);
-    width: 90%;
+    width: 10%;
+}
+
+.inputField{
+  display: flex;
+  position: relative;
+}
+
+.inputField_search{
+  width: 18.75rem;
+}
+
+.inputField_status{
+  width: 11.25rem;
+}
+
+.inputBox{
+  border-radius: var(--border-radius);
+  border: 1px solid var(--input-border);
+  padding: 1rem 0.75rem;
+  font-weight: var(--medium-weight);
+  width: 100%;
+}
+
+.labelInput{
+  font: var(--text-label);
+  color: var(--text-label-color);
+  background-color: var(--main-bg-color);
+  position: absolute;
+  top: -0.4rem;
+  left: 0.75rem;
+  height: 0.46rem;
+  padding: 0rem 0.2rem;
+}
+
+.downArrow {
+  width: 24px;
+  height: 25px;
+  fill: none;
+  position: absolute;
+  top: 50%;
+  right: 0.75rem;
+  transform: translateY(-50%);
 }

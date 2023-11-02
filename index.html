@@ -11,6 +11,7 @@
     />
   </head>
   <body>
+    <!-- Navbar -->
     <div class="navigation">
       <img
         src="./images/calculApp_logo.svg"
@@ -18,106 +19,163 @@
         class="imageLogo"
       />
       <div class="navigation_center">
-        <span class="menuItem"><a class="active" href="index.html">Dashboard</a></span>
-        <span class="menuItem"><a href="projects.html">Projects</a></span>
-        <span class="menuItem"><a href="clients.html">Clients</a></span>
-        <span class="menuItem"><a href="employees.html">Employees</a></span>
+        <a class="menuItem active" href="index.html">Dashboard</a>
+        <a class="menuItem" href="projects.html">Projects</a>
+        <a class="menuItem" href="clients.html">Clients</a>
+        <a class="menuItem" href="employees.html">Employees</a>
+      </div>
+      <a class="menuItem" href="newProject.html">
+        <button class="buttonProject">New Project</button>
+      </a>
     </div>
-        <button class="buttonProject menuItem" href="newProject.html">New Project</button>
- 
-    </div>
+
+    <!-- Content -->
     <div class="container_a">
-        <div class="title"><h3>Upcoming Deadlines (15.10. - 24.10.2023)</h3></div>
-        <div class="container_b">
-            <div class="title"><div class="frameImageProject"><img src="./images/PersonFilled.svg" class="imageProject"></div><h4 class="cardTitle">CalculApp 2.0</h4></div>
-            <div class="projectStatus">
-                <h4>Project Progress</h4>
-                <div class="progressBar_blank">
-                    <div class="progressBar_filled"><span class="progressBar_text">15%</span></div>
-                </div>
-            </div>
-            <div class="projectStatus">
-                <h4>Deadline: 16.10.2023</h4>
-                <div class="progressBar_blank scheduleBad_bg">
-                    <div class="progressBar_filled scheduleBad_main"><span class="progressBar_text">3 days left (of 30)</span></div>
-                </div>
-            </div>
+      <h3>Upcoming Deadlines (15.10. - 24.10.2023)</h3>
+      <div class="container_projectCard">
+        <div class="title">
+          <div class="frameImageProject">
+            <img src="./images/PersonFilled.svg" class="imageProject" />
+          </div>
+          <h4 class="cardTitle">CalculApp 2.0</h4>
         </div>
-        <div class="container_b">
-            <div class="title"><div class="frameImageProject"><img src="./images/PersonFilled.svg" class="imageProject"></div><h4 class="cardTitle">WebWords</h4></div>
-            <div class="projectStatus">
-                <h4>Project Progress</h4>
-                <div class="progressBar_blank">
-                    <div class="progressBar_filled"><span class="progressBar_text">15%</span></div>
-                </div>
+        <div class="projectStatus">
+          <h4>Project Progress</h4>
+          <div class="progressBar_blank">
+            <div class="progressBar_filled">
+              <span class="progressBar_text">15%</span>
             </div>
-            <div class="projectStatus">
-                <h4>Deadline: 16.10.2023</h4>
-                <div class="progressBar_blank scheduleOk_bg">
-                    <div class="progressBar_filled scheduleOk_main"><span class="progressBar_text">45 days left (of 50)</span></div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="container_b">
-            <div class="title"><div class="frameImageProject"><img src="./images/PersonFilled.svg" class="imageProject"></div><h4 class="cardTitle">CalculApp 2.0</h4></div>
-            <div class="projectStatus">
-                <h4>Project Progress</h4>
-                <div class="progressBar_blank">
-                    <div class="progressBar_filled"><span class="progressBar_text">15%</span></div>
-                </div>
+        <div class="projectStatus">
+          <h4>Deadline: 16.10.2023</h4>
+          <div class="progressBar_blank scheduleBad_bg">
+            <div class="progressBar_filled scheduleBad_main">
+              <span class="progressBar_text">3 days left (of 30)</span>
             </div>
-            <div class="projectStatus">
-                <h4>Deadline: 16.10.2023</h4>
-                <div class="progressBar_blank scheduleBad_bg">
-                    <div class="progressBar_filled scheduleBad_main"><span class="progressBar_text">3 days left (of 30)</span></div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="container_b">
-            <div class="title"><div class="frameImageProject"><img src="./images/PersonFilled.svg" class="imageProject"></div><h4 class="cardTitle">WebWords</h4></div>
-            <div class="projectStatus">
-                <h4>Project Progress</h4>
-                <div class="progressBar_blank">
-                    <div class="progressBar_filled"><span class="progressBar_text">15%</span></div>
-                </div>
-            </div>
-            <div class="projectStatus">
-                <h4>Deadline: 16.10.2023</h4>
-                <div class="progressBar_blank scheduleOk_bg">
-                    <div class="progressBar_filled scheduleOk_main"><span class="progressBar_text">45 days left (of 50)</span></div>
-                </div>
-            </div>
+      </div>
+      <div class="container_projectCard">
+        <div class="title">
+          <div class="frameImageProject">
+            <img src="./images/PersonFilled.svg" class="imageProject" />
+          </div>
+          <h4 class="cardTitle">WebWords</h4>
         </div>
-        <div class="container_b">
-            <div class="title"><div class="frameImageProject"><img src="./images/PersonFilled.svg" class="imageProject"></div><h4 class="cardTitle">CalculApp 2.0</h4></div>
-            <div class="projectStatus">
-                <h4>Project Progress</h4>
-                <div class="progressBar_blank">
-                    <div class="progressBar_filled"><span class="progressBar_text">15%</span></div>
-                </div>
+        <div class="projectStatus">
+          <h4>Project Progress</h4>
+          <div class="progressBar_blank">
+            <div class="progressBar_filled">
+              <span class="progressBar_text">15%</span>
             </div>
-            <div class="projectStatus">
-                <h4>Deadline: 16.10.2023</h4>
-                <div class="progressBar_blank scheduleBad_bg">
-                    <div class="progressBar_filled scheduleBad_main"><span class="progressBar_text">3 days left (of 30)</span></div>
-                </div>
-            </div>
+          </div>
         </div>
-        <div class="container_b">
-            <div class="title"><div class="frameImageProject"><img src="./images/PersonFilled.svg" class="imageProject"></div><h4 class="cardTitle">WebWords</h4></div>
-            <div class="projectStatus">
-                <h4>Project Progress</h4>
-                <div class="progressBar_blank">
-                    <div class="progressBar_filled"><span class="progressBar_text">15%</span></div>
-                </div>
+        <div class="projectStatus">
+          <h4>Deadline: 16.10.2023</h4>
+          <div class="progressBar_blank scheduleOk_bg">
+            <div class="progressBar_filled scheduleOk_main">
+              <span class="progressBar_text">45 days left (of 50)</span>
             </div>
-            <div class="projectStatus">
-                <h4>Deadline: 16.10.2023</h4>
-                <div class="progressBar_blank scheduleOk_bg">
-                    <div class="progressBar_filled scheduleOk_main"><span class="progressBar_text">45 days left (of 50)</span></div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+      <div class="container_projectCard">
+        <div class="title">
+          <div class="frameImageProject">
+            <img src="./images/PersonFilled.svg" class="imageProject" />
+          </div>
+          <h4 class="cardTitle">CalculApp 2.0</h4>
+        </div>
+        <div class="projectStatus">
+          <h4>Project Progress</h4>
+          <div class="progressBar_blank">
+            <div class="progressBar_filled">
+              <span class="progressBar_text">15%</span>
+            </div>
+          </div>
+        </div>
+        <div class="projectStatus">
+          <h4>Deadline: 16.10.2023</h4>
+          <div class="progressBar_blank scheduleBad_bg">
+            <div class="progressBar_filled scheduleBad_main">
+              <span class="progressBar_text">3 days left (of 30)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_projectCard">
+        <div class="title">
+          <div class="frameImageProject">
+            <img src="./images/PersonFilled.svg" class="imageProject" />
+          </div>
+          <h4 class="cardTitle">WebWords</h4>
+        </div>
+        <div class="projectStatus">
+          <h4>Project Progress</h4>
+          <div class="progressBar_blank">
+            <div class="progressBar_filled">
+              <span class="progressBar_text">15%</span>
+            </div>
+          </div>
+        </div>
+        <div class="projectStatus">
+          <h4>Deadline: 16.10.2023</h4>
+          <div class="progressBar_blank scheduleOk_bg">
+            <div class="progressBar_filled scheduleOk_main">
+              <span class="progressBar_text">45 days left (of 50)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_projectCard">
+        <div class="title">
+          <div class="frameImageProject">
+            <img src="./images/PersonFilled.svg" class="imageProject" />
+          </div>
+          <h4 class="cardTitle">CalculApp 2.0</h4>
+        </div>
+        <div class="projectStatus">
+          <h4>Project Progress</h4>
+          <div class="progressBar_blank">
+            <div class="progressBar_filled">
+              <span class="progressBar_text">15%</span>
+            </div>
+          </div>
+        </div>
+        <div class="projectStatus">
+          <h4>Deadline: 16.10.2023</h4>
+          <div class="progressBar_blank scheduleBad_bg">
+            <div class="progressBar_filled scheduleBad_main">
+              <span class="progressBar_text">3 days left (of 30)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_projectCard">
+        <div class="title">
+          <div class="frameImageProject">
+            <img src="./images/PersonFilled.svg" class="imageProject" />
+          </div>
+          <h4 class="cardTitle">WebWords</h4>
+        </div>
+        <div class="projectStatus">
+          <h4>Project Progress</h4>
+          <div class="progressBar_blank">
+            <div class="progressBar_filled">
+              <span class="progressBar_text">15%</span>
+            </div>
+          </div>
+        </div>
+        <div class="projectStatus">
+          <h4>Deadline: 16.10.2023</h4>
+          <div class="progressBar_blank scheduleOk_bg">
+            <div class="progressBar_filled scheduleOk_main">
+              <span class="progressBar_text">45 days left (of 50)</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
