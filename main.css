@@ -1,6 +1,6 @@
 :root {
   --text-label: 400 0.75rem Inter;
-  --text-table: 400 0.875rem Inter;
+  --text-table: 500 0.875rem Inter;
   --light-weight: 400;
   --medium-weight: 600;
   --heavy-weight: 700;
@@ -23,7 +23,11 @@
     0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   --text-shadow: 0px 1px 0.33px rgba(0, 0, 0, 0.2),
     0px 0.66px 0.66px rgba(0, 0, 0, 0.14), 0px 0.33px 1.66px rgba(0, 0, 0, 0.12);
-  --progress-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.5), -1px 1px 1.5px rgba(0, 0, 0, 0.5), -1px -1px 1.5px rgba(0, 0, 0, 0.5), 1px -1px 1.5px rgba(0, 0, 0, 0.5), 1px 0px 1.5px rgba(0, 0, 0, 0.5), -1px 0px 1.5px rgba(0, 0, 0, 0.5), 0px 1px 1.5px rgba(0, 0, 0, 0.5), 0px -1px 1.5px rgba(0, 0, 0, 0.5);
+  --progress-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.5),
+    -1px 1px 1.5px rgba(0, 0, 0, 0.5), -1px -1px 1.5px rgba(0, 0, 0, 0.5),
+    1px -1px 1.5px rgba(0, 0, 0, 0.5), 1px 0px 1.5px rgba(0, 0, 0, 0.5),
+    -1px 0px 1.5px rgba(0, 0, 0, 0.5), 0px 1px 1.5px rgba(0, 0, 0, 0.5),
+    0px -1px 1.5px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -39,6 +43,10 @@
   z-index: 1;
 }
 
+th {
+  white-space: nowrap;
+}
+
 th,
 td {
   font: var(--text-table);
@@ -48,7 +56,8 @@ td {
   border-bottom: var(--border);
 }
 
-th, th * {
+th,
+th * {
   font: var(--text-table);
   background-color: var(--light-brand-color);
   font-weight: var(--medium-weight);
@@ -59,14 +68,13 @@ th > a {
   width: 100%;
 }
 
-.th_active{
+.th_active {
   background-color: var(--main-brand-color);
   color: var(--anti-text-color);
 }
 
 td > a {
   font: var(--text-table);
-  font-weight: var(--medium-weight);
   color: var(--main-brand-color);
 }
 
@@ -82,16 +90,30 @@ h3 {
   width: 100%;
 }
 
-h3, h4, h5{
-font-weight: var(--heavy-weight);
+h3,
+h4,
+h5 {
+  font-weight: var(--heavy-weight);
+}
+
+.header_popup {
+  margin-right: auto;
 }
 
 .active {
   color: var(--main-brand-color);
 }
 
+.positive {
+  color: var(--success-color-main);
+}
+
+.negative {
+  color: var(--failure-color-main);
+}
+
 .buttonProject {
-  height: 1.75rem;
+  height: 2.25rem;
   width: fit-content;
   border: none;
   border-radius: var(--border-radius);
@@ -100,6 +122,32 @@ font-weight: var(--heavy-weight);
   color: var(--anti-text-color);
   background-color: var(--main-brand-color);
   white-space: nowrap;
+  font-weight: var(--medium-weight);
+}
+
+.popupFooter {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.popupFooter > * {
+  font: var(--text-table);
+  font-weight: var(--medium-weight);
+}
+
+.popupContainer {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.61);
+  backdrop-filter: blur(5px);
+  left: 0px;
+  top: 0px;
+  z-index: 20;
 }
 
 .imageLogo {
@@ -107,11 +155,19 @@ font-weight: var(--heavy-weight);
   height: 1.7rem;
   margin: 0.1rem 1rem -0.125rem 1rem;
 }
+.imageLogin {
+  background-color: var(--light-brand-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--neutral300);
+  border-bottom: 0;
+  box-shadow: var(--box-shadow);
+}
 
 .imageProject {
   background-color: var(--neutral300);
   width: 1.5rem;
   height: 1.5rem;
+  border-radius: var(--border-radius);
 }
 
 .frameImageProject {
@@ -126,6 +182,7 @@ font-weight: var(--heavy-weight);
 
 .navigation {
   display: flex;
+  width: auto;
   flex-direction: row;
   align-items: center;
   border-bottom: 1px solid var(--neutral300);
@@ -139,6 +196,17 @@ font-weight: var(--heavy-weight);
   z-index: 10;
 }
 
+.footer {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem 0rem;
+  margin: 0rem 1.25rem;
+  justify-content: center;
+  border-top: 1px solid var(--neutral300);
+}
+
 .navigation * {
   font-weight: var(--heavy-weight);
 }
@@ -148,6 +216,18 @@ font-weight: var(--heavy-weight);
   gap: 1rem;
   width: 100%;
   padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar_popup {
+  padding: 0;
+}
+
+.popup_button {
+  display: flex;
+  width: 31px;
+  height: 31px;
 }
 
 .navigation_center {
@@ -156,7 +236,15 @@ font-weight: var(--heavy-weight);
 }
 
 .menuItem {
+  display: inline-flex;
   margin: 0.1rem 1rem 0rem 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.buttonProject_link {
+  margin-left: auto;
 }
 
 .container_a {
@@ -183,7 +271,7 @@ font-weight: var(--heavy-weight);
   border: 1px solid var(--neutral300);
   border-bottom: 0;
   box-shadow: var(--box-shadow);
-  padding: 1rem 1rem 0.5rem 1rem;
+  padding: 1rem;
   width: 95%;
   background-color: var(--main-bg-color);
   overflow-x: auto;
@@ -201,12 +289,25 @@ font-weight: var(--heavy-weight);
   background-color: var(--main-bg-color);
 }
 
+.container_popup {
+  width: fit-content;
+  height: fit-content;
+  justify-content: center;
+  padding: 1rem;
+}
+
 .title {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: 1rem;
   width: 100%;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .cardTitle {
@@ -229,6 +330,8 @@ font-weight: var(--heavy-weight);
   border: 1px solid var(--neutral300);
   border-bottom: 0;
   box-shadow: var(--box-shadow);
+  position: relative;
+  z-index: 1;
 }
 
 .progressBar_filled {
@@ -237,6 +340,8 @@ font-weight: var(--heavy-weight);
   background-color: var(--main-brand-color);
   border-radius: var(--border-radius);
   border-right: 1px solid var(--input-border);
+  position: relative;
+  z-index: 2;
 }
 
 .progressBar_text {
@@ -250,6 +355,14 @@ font-weight: var(--heavy-weight);
   left: 0;
   right: 0;
   text-align: center;
+  z-index: 3;
+}
+
+.progress_inTable {
+  font: var(--text-table);
+  height: 1.15rem;
+  margin: 0;
+  padding: 0rem;
 }
 
 .scheduleOk_bg {
@@ -265,6 +378,21 @@ font-weight: var(--heavy-weight);
 .scheduleBad_main {
   background-color: var(--failure-color-main);
   width: 90%;
+}
+
+.width0{
+  width: 0%;
+}
+
+.width85{
+  width: 85%;
+}
+
+.width95{
+  width: 95%;
+}
+.width100{
+  width: 100%;
 }
 
 .inputField {
@@ -297,6 +425,13 @@ font-weight: var(--heavy-weight);
   background-repeat: no-repeat;
 }
 
+.inputBox_calender {
+  background-image: url(./images/calender.svg);
+  background-size: 16px 16px;
+  background-position: right 0.75rem top 50%;
+  background-repeat: no-repeat;
+}
+
 .labelInput {
   font: var(--text-label);
   color: var(--text-label-color);
@@ -306,6 +441,10 @@ font-weight: var(--heavy-weight);
   left: 0.75rem;
   height: 0.46rem;
   padding: 0rem 0.2rem;
+}
+
+.lastItem {
+  margin-bottom: 2rem;
 }
 
 /* 
