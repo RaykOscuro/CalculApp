@@ -1,0 +1,56 @@
+[
+  {
+    "name": "CalculApaaap 2.0",
+    "progress": 15,
+    "startDate": "2023-10-21T23:59:59+01:00",
+    "duration": 15,
+    "status": "Open",
+    "budget": 10000,
+    "client": "AutoComplete Inc."
+  },
+  {
+    "name": "CalculApp 40",
+    "progress": 15,
+    "startDate": "2023-10-21T23:59:59+01:00",
+    "duration": 40,
+    "status": "Open",
+    "budget": 10000,
+    "client": "AutoComplete Inc."
+  },
+  {
+    "name": "CalculApp 41",
+    "progress": 15,
+    "startDate": "2023-10-21T23:59:59+01:00",
+    "duration": 41,
+    "status": "Open",
+    "budget": 10000,
+    "client": "AutoComplete Inc."
+  },
+  {
+    "name": "CalculApp 2.0",
+    "progress": 15,
+    "startDate": "2023-10-21T23:59:59+01:00",
+    "duration": 32,
+    "status": "Open",
+    "budget": 10000,
+    "client": "AutoComplete Inc."
+  },
+  {
+    "name": "CalculApp 2.0",
+    "progress": 15,
+    "startDate": "2023-10-21T23:59:59+01:00",
+    "duration": 30,
+    "status": "Open",
+    "budget": 10000,
+    "client": "AutoComplete Inc."
+  },
+  {
+    "name": "CalculApp 2.0",
+    "progress": 15,
+    "startDate": "2023-10-21T23:59:59+01:00",
+    "duration": 30,
+    "status": "Open",
+    "budget": 10000,
+    "client": "AutoComplete Inc."
+  }
+]

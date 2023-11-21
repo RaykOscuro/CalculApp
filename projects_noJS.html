@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css?family=Inter"
       rel="stylesheet"
     />
+    <script src="./projectTable.js" type="module" defer></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -54,7 +55,7 @@
             <button class="buttonProject">New Project</button>
           </a>
         </div>
-        <table width="100%">
+        <table width="100%" id="projectTable">
           <tr>
             <th><a href="#">Project Name</a></th>
             <th><a href="#">Client</a></th>
@@ -68,7 +69,11 @@
             <td>AutoComplete Inc.</td>
             <td>30.10.2023</td>
             <td>Open</td>
-            <td>66%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">15%</span>
+              <div class="progressBar_filled">
+              </div>
+            </div></td>
             <td>$ 10,000</td>
           </tr>
           <tr>
@@ -76,7 +81,11 @@
             <td>Word Smithy</td>
             <td>18.10.2023</td>
             <td>Open</td>
-            <td>85%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">85%</span>
+              <div class="progressBar_filled width85">
+              </div>
+            </div></td>
             <td>$ 20,000</td>
           </tr>
           <tr>
@@ -84,7 +93,11 @@
             <td>AutoComplete Inc.</td>
             <td>16.10.2023</td>
             <td>Open</td>
-            <td>95%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">95%</span>
+              <div class="progressBar_filled width95">
+              </div>
+            </div></td>
             <td>$ 17,000</td>
           </tr>
           <tr>
@@ -92,7 +105,11 @@
             <td>Cell</td>
             <td>12.10.2023</td>
             <td>Cancelled</td>
-            <td>0%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">0%</span>
+              <div class="progressBar_filled width0">
+              </div>
+            </div></td>
             <td>$ 3,400</td>
           </tr>
           <tr>
@@ -100,7 +117,11 @@
             <td>Cell</td>
             <td>09.09.2023</td>
             <td>Delivered</td>
-            <td>100%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">100%</span>
+              <div class="progressBar_filled width100">
+              </div>
+            </div></td>
             <td>$ 60,000</td>
           </tr>
           <tr>
@@ -108,7 +129,11 @@
             <td>Cell</td>
             <td>30.08.2023</td>
             <td>Cancelled</td>
-            <td>0%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">0%</span>
+              <div class="progressBar_filled width0">
+              </div>
+            </div></td>
             <td>$ 40,000</td>
           </tr>
           <tr>
@@ -116,7 +141,11 @@
             <td>Cell</td>
             <td>12.10.2023</td>
             <td>Cancelled</td>
-            <td>0%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">0%</span>
+              <div class="progressBar_filled width0">
+              </div>
+            </div></td>
             <td>$ 3,400</td>
           </tr>
           <tr>
@@ -124,7 +153,11 @@
             <td>Cell</td>
             <td>09.09.2023</td>
             <td>Delivered</td>
-            <td>100%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">100%</span>
+              <div class="progressBar_filled width100">
+              </div>
+            </div></td>
             <td>$ 60,000</td>
           </tr>
           <tr>
@@ -132,7 +165,11 @@
             <td>Cell</td>
             <td>30.08.2023</td>
             <td>Cancelled</td>
-            <td>0%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">0%</span>
+              <div class="progressBar_filled width0">
+              </div>
+            </div></td>
             <td>$ 40,000</td>
           </tr>
           <tr>
@@ -140,7 +177,11 @@
             <td>Cell</td>
             <td>12.10.2023</td>
             <td>Cancelled</td>
-            <td>0%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">0%</span>
+              <div class="progressBar_filled width0">
+              </div>
+            </div></td>
             <td>$ 3,400</td>
           </tr>
           <tr>
@@ -148,7 +189,11 @@
             <td>Cell</td>
             <td>09.09.2023</td>
             <td>Delivered</td>
-            <td>100%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">100%</span>
+              <div class="progressBar_filled width100">
+              </div>
+            </div></td>
             <td>$ 60,000</td>
           </tr>
           <tr>
@@ -156,7 +201,11 @@
             <td>Cell</td>
             <td>30.08.2023</td>
             <td>Cancelled</td>
-            <td>0%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">0%</span>
+              <div class="progressBar_filled width0">
+              </div>
+            </div></td>
             <td>$ 40,000</td>
           </tr>
           <tr>
@@ -164,7 +213,11 @@
             <td>Cell</td>
             <td>12.10.2023</td>
             <td>Cancelled</td>
-            <td>0%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">0%</span>
+              <div class="progressBar_filled width0">
+              </div>
+            </div></td>
             <td>$ 3,400</td>
           </tr>
           <tr>
@@ -172,7 +225,11 @@
             <td>Cell</td>
             <td>09.09.2023</td>
             <td>Delivered</td>
-            <td>100%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">100%</span>
+              <div class="progressBar_filled width100">
+              </div>
+            </div></td>
             <td>$ 60,000</td>
           </tr>
           <tr>
@@ -180,59 +237,16 @@
             <td>Cell</td>
             <td>30.08.2023</td>
             <td>Cancelled</td>
-            <td>0%</td>
+            <td><div class="progressBar_blank progress_inTable">
+              <span class="progressBar_text progress_inTable">0%</span>
+              <div class="progressBar_filled width0">
+              </div>
+            </div></td>
             <td>$ 40,000</td>
           </tr>
         </table>
       </div>
     </div>
-    <div class="popupContainer">
-      <div class="container_a container_popup">
-        <h4 class="header_popup">New Project</h4>
-        <div class="container_projectCard centered">
-          <div class="toolbar centered">
-            <div class="frameImageProject">
-              <img src="./images/PersonFilled.svg" class="imageProject" />
-            </div>
-            <a class="active" href="./pictureUpload.html">
-              Add Project Picture
-            </a>
-          </div>
-          <h5 class="inputField_search">Core Information</h5>
-          <div class="inputField inputField_search">
-            <input class="inputBox" />
-            <label class="labelInput">Project Name</label>
-          </div>
-          <div class="inputField inputField_search">
-            <select class="inputBox inputBox_selector">
-              <option value="autocompleteinc" selected>
-                AutoComplete Inc.
-              </option>
-              <option value="Open">Lorem</option>
-              <option value="delivered">Ipsum</option>
-              <optgroup label="______________">
-                <option value="new">New Client...</option>
-              </optgroup>
-            </select>
-            <label class="labelInput">Client</label>
-          </div>
-          <div class="inputField inputField_search">
-            <input class="inputBox" placeholder="unlimited" />
-            <label class="labelInput">Budget</label>
-          </div>
-          <div class="inputField inputField_search lastItem">
-            <input
-              class="inputBox inputBox_calender"
-              placeholder="dd.mm.yyyy"
-            />
-            <label class="labelInput">Deadline</label>
-          </div>
-        </div>
-        <div class="popupFooter">
-          <a href="projects.html" class="negative">CANCEL</a>
-          <a href="newProjectB.html" class="active">NEXT</a>
-        </div>
-      </div>
-    </div>
+    <div class="footer">© 2023 - CalculApp Inc.</div>
   </body>
 </html>

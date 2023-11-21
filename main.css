@@ -43,6 +43,10 @@
   z-index: 1;
 }
 
+a:hover {
+  color: var(--main-brand-color);
+}
+
 th {
   white-space: nowrap;
 }
@@ -336,7 +340,6 @@ h5 {
 
 .progressBar_filled {
   height: 100%;
-  width: 15%;
   background-color: var(--main-brand-color);
   border-radius: var(--border-radius);
   border-right: 1px solid var(--input-border);
