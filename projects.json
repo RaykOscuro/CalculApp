@@ -6,7 +6,8 @@
     "duration": 15,
     "status": "Open",
     "budget": 10000,
-    "client": "AutoComplete Inc."
+    "client": "AutoComplete Inc.",
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
   },
   {
     "name": "CalculApp 40",
@@ -15,7 +16,8 @@
     "duration": 40,
     "status": "Open",
     "budget": 10000,
-    "client": "AutoComplete Inc."
+    "client": "AutoComplete Inc.",
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
   },
   {
     "name": "CalculApp 41",
@@ -24,7 +26,8 @@
     "duration": 41,
     "status": "Open",
     "budget": 10000,
-    "client": "AutoComplete Inc."
+    "client": "AutoComplete Inc.",
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
   },
   {
     "name": "CalculApp 2.0",
@@ -33,7 +36,8 @@
     "duration": 32,
     "status": "Open",
     "budget": 10000,
-    "client": "AutoComplete Inc."
+    "client": "AutoComplete Inc.",
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
   },
   {
     "name": "CalculApp 2.0",
@@ -42,7 +46,8 @@
     "duration": 30,
     "status": "Open",
     "budget": 10000,
-    "client": "AutoComplete Inc."
+    "client": "AutoComplete Inc.",
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
   },
   {
     "name": "CalculApp 2.0",
@@ -51,6 +56,7 @@
     "duration": 30,
     "status": "Open",
     "budget": 10000,
-    "client": "AutoComplete Inc."
+    "client": "AutoComplete Inc.",
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
   }
 ]

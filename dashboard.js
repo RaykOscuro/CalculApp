@@ -8,9 +8,9 @@ const timeWindow = document.querySelector("h3");
 const today = new Date();
 const timeWindowEnd = new Date();
 timeWindowEnd.setDate(timeWindowEnd.getDate() + 10);
-timeWindow.innerText = `Upcoming Deadlines (${today.toLocaleDateString(
+timeWindow.innerText = `Upcoming Deadlines (${today.getDate() < 10 ? "0" : ""}${today.toLocaleDateString(
   "de-DE"
-)} - ${timeWindowEnd.toLocaleDateString("de-DE")})`;
+)} - ${timeWindowEnd.getDate() < 10 ? "0" : ""}${timeWindowEnd.toLocaleDateString("de-DE")})`;
 console.log(timeWindow);
 const projectContainer = document.querySelector(".container_a");
 
@@ -38,7 +38,7 @@ for (var project of locjson) {
     </div>
   </div>
   <div class="projectStatus">
-    <h5>Deadline: ${deadline.toLocaleDateString("de-DE")}</h5>
+    <h5>Deadline: ${deadline.getDate() < 10 ? "0" : ""}${deadline.toLocaleDateString("de-DE")}</h5>
     <div class="progressBar_blank scheduleBad_bg">
       <span class="progressBar_text">${remainingDays} day${
       remainingDays !== 1 ? "s" : ""

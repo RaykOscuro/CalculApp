@@ -47,6 +47,16 @@ a:hover {
   color: var(--main-brand-color);
 }
 
+button {
+  background: none;
+  border: none;
+  margin: 0;
+}
+
+.formButton:hover {
+  cursor: pointer;
+}
+
 th {
   white-space: nowrap;
 }
@@ -114,19 +124,6 @@ h5 {
 
 .negative {
   color: var(--failure-color-main);
-}
-
-.buttonProject {
-  height: 2.25rem;
-  width: fit-content;
-  border: none;
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  padding: 0 0.6rem;
-  color: var(--anti-text-color);
-  background-color: var(--main-brand-color);
-  white-space: nowrap;
-  font-weight: var(--medium-weight);
 }
 
 .popupFooter {
@@ -247,7 +244,17 @@ h5 {
   gap: 0.5rem;
 }
 
-.buttonProject_link {
+.buttonProject {
+  height: 2.25rem;
+  width: fit-content;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 0 0.6rem;
+  color: var(--anti-text-color);
+  background-color: var(--main-brand-color);
+  white-space: nowrap;
+  font-weight: var(--medium-weight);
   margin-left: auto;
 }
 
@@ -298,6 +305,12 @@ h5 {
   height: fit-content;
   justify-content: center;
   padding: 1rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .title {
@@ -383,24 +396,58 @@ h5 {
   width: 90%;
 }
 
-.width0{
+.width0 {
   width: 0%;
 }
 
-.width85{
+.width85 {
   width: 85%;
 }
 
-.width95{
+.width95 {
   width: 95%;
 }
-.width100{
+.width100 {
   width: 100%;
 }
 
 .inputField {
   display: flex;
   position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.hidden {
+  display:none;
+}
+
+.left {
+  transform: translateX(-200%);
+}
+
+.right {
+  transform: translateX(200%);
+}
+
+.invisible {
+visibility: hidden;
+opacity: 0;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.transition{
+  -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+}
+
+#dataForm:last-child {
+  margin-bottom: 2rem;
 }
 
 .inputField_search {
@@ -418,31 +465,31 @@ h5 {
   font-weight: var(--light-weight);
   width: 100%;
   background-color: var(--anti-text-color);
-  appearance: none;
 }
 
 .inputBox_selector {
   background-image: url(./images/ArrowDropDownFilled.svg);
   background-size: 25px 24px;
-  background-position: right 0.75rem top 50%;
+  background-position: right 0.85rem top 50%;
   background-repeat: no-repeat;
+  appearance: none;
 }
 
-.inputBox_calender {
+/* .inputBox_calender {
   background-image: url(./images/calender.svg);
   background-size: 16px 16px;
   background-position: right 0.75rem top 50%;
   background-repeat: no-repeat;
-}
+} */
 
 .labelInput {
   font: var(--text-label);
   color: var(--text-label-color);
   background-color: var(--main-bg-color);
   position: absolute;
-  top: -0.4rem;
+  top: -0.38rem;
   left: 0.75rem;
-  height: 0.46rem;
+  height: 0.5rem;
   padding: 0rem 0.2rem;
 }
 

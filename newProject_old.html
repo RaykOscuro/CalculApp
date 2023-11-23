@@ -186,9 +186,7 @@
         </table>
       </div>
     </div>
-    
     <div class="popupContainer">
-
       <div class="container_a container_popup">
         <h4 class="header_popup">New Project</h4>
         <div class="container_projectCard centered">
@@ -201,97 +199,40 @@
             </a>
           </div>
           <h5 class="inputField_search">Core Information</h5>
-          <form data-multi-step id="dataForm">
-            <div class="inputField inputField_search">
-              <input type="text" class="inputBox" id="projectName" />
-              <label for="projectName" class="labelInput">Project Name</label>
-            </div>
-            <div class="inputField inputField_search">
-              <select class="inputBox inputBox_selector" id="projectClient">
-                <option value="autocompleteinc" selected>
-                  AutoComplete Inc.
-                </option>
-                <option value="Open">Lorem</option>
-                <option value="delivered">Ipsum</option>
-                <optgroup label="______________">
-                  <option value="new">New Client...</option>
-                </optgroup>
-              </select>
-              <label for="projectClient" class="labelInput">Client</label>
-            </div>
-            <div class="inputField inputField_search">
-              <input
-                type="text"
-                class="inputBox"
-                placeholder="unlimited"
-                id="projectBudget"
-              />
-              <label for="projectBudget" class="labelInput">Budget</label>
-            </div>
-            <div class="inputField inputField_search">
-              <input id="projectDeadline" type="date" class="inputBox" />
-              <label for="projectDeadline" class="labelInput">Deadline</label>
-            </div>
-          </form>
-        </div>
-        <div class="popupFooter">
-          <button type="button" class="formButton negative">CANCEL</button>
-          <button type="button" class="formButton active">NEXT</button>
-        </div>
-      </div>
-
-      <div class="container_a container_popup">
-        <h4 class="header_popup">New Project</h4>
-        <div class="container_projectCard centered">
-          <div class="toolbar centered">
-            <div class="projectStatus">
-              <h5>Budget: $10,000</h5>
-              <div class="progressBar_blank inputField_search">
-                <div class="progressBar_filled">
-                  <span class="progressBar_text">$1,500</span>
-                </div>
-              </div>
-            </div>
+          <div class="inputField inputField_search">
+            <input class="inputBox" />
+            <label class="labelInput">Project Name</label>
           </div>
-          <h5>Choose Tasks & Assign Staff</h5>
-          <form data-multi-step id="dataForm">
-            <div class="toolbar toolbar_popup">
-              <div class="inputField inputField_search">
-                <select class="inputBox inputBox_selector">
-                  <option value="empty" selected></option>
-                  <option value="ui_ux">UI/UX Design</option>
-                  <option value="html">html Coding</option>
-                  <option value="css">css Coding</option>
-                  <option value="js">js Coding</option>
-                </select>
-                <label class="labelInput">Position</label>
-              </div>
-              <div class="inputField inputField_status">
-                <input class="inputBox" />
-                <label class="labelInput">Hours</label>
-              </div>
-              <div class="inputField inputField_search">
-                <select class="inputBox inputBox_selector">
-                  <option value="empty" selected></option>
-                  <option value="JoDoe">Jo Doe</option>
-                  <option value="lorem">Lorem</option>
-                  <option value="ipsum">Ipsum</option>
-                  <optgroup label="______________">
-                    <option value="new">New Employee...</option>
-                  </optgroup>
-                </select>
-                <label class="labelInput">Employee</label>
-              </div>
-              <div class="popup_button"></div>
-            </div>
-          </form>
+          <div class="inputField inputField_search">
+            <select class="inputBox inputBox_selector">
+              <option value="autocompleteinc" selected>
+                AutoComplete Inc.
+              </option>
+              <option value="Open">Lorem</option>
+              <option value="delivered">Ipsum</option>
+              <optgroup label="______________">
+                <option value="new">New Client...</option>
+              </optgroup>
+            </select>
+            <label class="labelInput">Client</label>
+          </div>
+          <div class="inputField inputField_search">
+            <input class="inputBox" placeholder="unlimited" />
+            <label class="labelInput">Budget</label>
+          </div>
+          <div class="inputField inputField_search lastItem">
+            <input
+              class="inputBox inputBox_calender"
+              placeholder="dd.mm.yyyy"
+            />
+            <label class="labelInput">Deadline</label>
+          </div>
         </div>
         <div class="popupFooter">
-          <button type="button" class="formButton active">BACK</button>
-          <button type="button" class="formButton positive">ACCEPT</button>
+          <a href="projects.html" class="negative">CANCEL</a>
+          <a href="newProjectB.html" class="active">NEXT</a>
         </div>
       </div>
-
     </div>
   </body>
 </html>
