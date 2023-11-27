@@ -1,62 +1,62 @@
 [
   {
-    "name": "CalculApaaap 2.0",
-    "progress": 15,
-    "startDate": "2023-10-21T23:59:59+01:00",
+    "name": "Lorem Ipsum App",
+    "progress": 76,
+    "startDate": "2023-11-23T11:59:59+01:00",
     "duration": 15,
     "status": "Open",
-    "budget": 10000,
+    "budget": 15000,
     "client": "AutoComplete Inc.",
-    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "Jo Doe"}]
   },
   {
     "name": "CalculApp 40",
     "progress": 15,
-    "startDate": "2023-10-21T23:59:59+01:00",
+    "startDate": "2023-10-21T11:59:59+01:00",
     "duration": 40,
     "status": "Open",
-    "budget": 10000,
+    "budget": 17000,
     "client": "AutoComplete Inc.",
-    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "Jo Doe"}]
   },
   {
-    "name": "CalculApp 41",
-    "progress": 15,
-    "startDate": "2023-10-21T23:59:59+01:00",
+    "name": "TestApp 23",
+    "progress": 45,
+    "startDate": "2023-10-21T11:59:59+01:00",
     "duration": 41,
     "status": "Open",
-    "budget": 10000,
+    "budget": 45000,
     "client": "AutoComplete Inc.",
-    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "Jo Doe"}]
   },
   {
-    "name": "CalculApp 2.0",
-    "progress": 15,
-    "startDate": "2023-10-21T23:59:59+01:00",
-    "duration": 32,
+    "name": "AppAppApp 2.0",
+    "progress": 66,
+    "startDate": "2023-11-21T11:59:59+01:00",
+    "duration": 10,
     "status": "Open",
-    "budget": 10000,
+    "budget": 50000,
     "client": "AutoComplete Inc.",
-    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "Jo Doe"}]
   },
   {
-    "name": "CalculApp 2.0",
-    "progress": 15,
-    "startDate": "2023-10-21T23:59:59+01:00",
-    "duration": 30,
-    "status": "Open",
-    "budget": 10000,
+    "name": "Totally Real App",
+    "progress": 100,
+    "startDate": "2023-10-21T11:59:59+01:00",
+    "duration": 12,
+    "status": "Delivered",
+    "budget": 3000,
     "client": "AutoComplete Inc.",
-    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "Jo Doe"}]
   },
   {
-    "name": "CalculApp 2.0",
-    "progress": 15,
-    "startDate": "2023-10-21T23:59:59+01:00",
-    "duration": 30,
+    "name": "Not Another CalculApp 3.0",
+    "progress": 90,
+    "startDate": "2023-10-21T11:59:59+01:00",
+    "duration": 45,
     "status": "Open",
-    "budget": 10000,
-    "client": "AutoComplete Inc.",
-    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "JoDoe" }]
+    "budget": 17000,
+    "client": "Big Tech",
+    "tasks": [{ "department": "ui_ux", "hours": "3", "employee": "Jo Doe"}]
   }
 ]

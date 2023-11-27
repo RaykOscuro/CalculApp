@@ -36,18 +36,18 @@
       <div class="container_projectCard">
         <div class="toolbar">
           <div class="inputField inputField_search">
-            <input
+            <input id="projectSearch"
               class="inputBox"
               placeholder="Project name, client, etc..."
             />
             <label class="labelInput">Search</label>
           </div>
           <div class="inputField inputField_status">
-            <select class="inputBox inputBox_selector">
-              <option value="all" selected>All</option>
-              <option value="open">Open</option>
-              <option value="delivered">Delivered</option>
-              <option value="cancelled">Cancelled</option>
+            <select id="projectStatus" class="inputBox inputBox_selector">
+              <option value="" selected>All</option>
+              <option value="Open">Open</option>
+              <option value="Delivered">Delivered</option>
+              <option value="Cancelled">Cancelled</option>
             </select>
             <label class="labelInput">Status</label>
           </div>
@@ -61,14 +61,13 @@
         </div>
         <table width="100%" id="projectTable">
           <tr>
-            <th><a href="#">Project Name</a></th>
-            <th><a href="#">Client</a></th>
-            <th><a href="#">Deadline ▾</a></th>
-            <th><a href="#">Status</a></th>
-            <th><a href="#">Progress</a></th>
-            <th><a href="#">Budget</a></th>
+            <th><button class="tableButton">Project Name</button></th>
+            <th><button class="tableButton">Client</button></th>
+            <th><button class="tableButton">Deadline ▾</button></th>
+            <th><button class="tableButton">Status</button></th>
+            <th><button class="tableButton">Progress</button></th>
+            <th><button class="tableButton">Budget</button></th>
           </tr>
-          <tr></tr>
         </table>
       </div>
     </div>
@@ -103,11 +102,11 @@
                 id="projectClient"
                 name="projectClient"
               >
-                <option value="autocompleteinc" selected>
+                <option value="AutoComplete Inc." selected>
                   AutoComplete Inc.
                 </option>
-                <option value="Open">Lorem</option>
-                <option value="delivered">Ipsum</option>
+                <option value="Lorem">Lorem</option>
+                <option value="Ipsum">Ipsum</option>
                 <optgroup label="______________">
                   <option value="new">New Client...</option>
                 </optgroup>
@@ -121,11 +120,12 @@
                 placeholder="unlimited"
                 id="projectBudget"
                 name="projectBudget"
+                min="100"
               />
               <label for="projectBudget" class="labelInput">Budget</label>
             </div>
             <div class="inputField inputField_search">
-              <input id="projectDeadline" type="date" class="inputBox" />
+              <input id="projectDeadline" name="projectDeadline" type="date" class="inputBox"/>
               <label for="projectDeadline" class="labelInput">Deadline</label>
             </div>
           </div>
@@ -152,8 +152,8 @@
               <div class="projectStatus">
                 <h5 id="header_budget"></h5>
                 <div class="progressBar_blank inputField_search">
-                  <div class="progressBar_filled">
-                    <span class="progressBar_text">$1,500</span>
+                  <span class="progressBar_text" id="currentCost">0€</span>
+                  <div class="progressBar_filled" style="width: 0%" id="costBar">
                   </div>
                 </div>
               </div>
@@ -167,18 +167,18 @@
                   class="inputBox inputBox_selector departmentSelector"
                 >
                   <option value="" selected></option>
-                  <option value="ui_ux">UI/UX Design</option>
-                  <option value="html">html Coding</option>
-                  <option value="css">css Coding</option>
-                  <option value="js">js Coding</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="html Coding">html Coding</option>
+                  <option value="css Coding">css Coding</option>
+                  <option value="js Coding">js Coding</option>
                 </select>
                 <label for="projectDepartment1" class="labelInput"
                   >Position</label
                 >
               </div>
               <div class="inputField inputField_status">
-                <input id="projectHours" name="projectHours" type="number" class="inputBox" />
-                <label for="projectHours" class="labelInput">Hours</label>
+                <input id="projectHours1" name="projectHours1" type="number" class="inputBox" />
+                <label for="projectHours1" class="labelInput">Hours</label>
               </div>
               <div class="inputField inputField_search">
                 <select
@@ -187,9 +187,9 @@
                   class="inputBox inputBox_selector"
                 >
                   <option value="" selected></option>
-                  <option value="JoDoe">Jo Doe</option>
-                  <option value="lorem">Lorem</option>
-                  <option value="ipsum">Ipsum</option>
+                  <option value="Jo Doe">Jo Doe</option>
+                  <option value="Lorem">Lorem</option>
+                  <option value="Ipsum">Ipsum</option>
                   <optgroup label="______________">
                     <option value="new">New Employee...</option>
                   </optgroup>
@@ -215,6 +215,37 @@
           </div>
         </div>
       </form>
+      <div
+          class="container_a container_popup transition hidden"
+          id="projectOverview"
+        >
+          <h4 id="overviewName" class="header_popup">{Project Name}</h4>
+          <div
+            class="container_projectCard centered transition"
+          >
+            <div class="toolbar centered">
+              <div class="projectStatus">
+                <h5>Test</h5>
+              </div>
+            </div>
+            <h5>Choose Tasks & Assign Staff</h5>
+            <div class="toolbar toolbar_popup">
+              
+            </div>
+          </div>
+          <div class="popupFooter">
+            <button type="button" class="formButton active" id="editButton">
+              EDIT
+            </button>
+            <button
+              type="button"
+              class="formButton negative"
+              id="closeButton"
+            >
+              CLOSE
+            </button>
+          </div>
+        </div>
     </div>
   </body>
 </html>

@@ -57,6 +57,31 @@ button {
   cursor: pointer;
 }
 
+.tableButton:hover,.innerTableButton:hover {
+  cursor: pointer;
+  color: var(--main-brand-color);
+}
+
+.tableButton {
+  font: var(--text-table);
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+}
+
+.innerTableButton {
+  font: var(--text-table);
+  font-weight: 500;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  padding: 0;
+}
+
 th {
   white-space: nowrap;
 }
@@ -66,8 +91,11 @@ td {
   font: var(--text-table);
   text-align: left;
   border-radius: var(--border-radius);
-  padding: 1rem;
   border-bottom: var(--border);
+}
+
+td {
+  padding: 1rem;
 }
 
 th,
@@ -112,6 +140,7 @@ h5 {
 
 .header_popup {
   margin-right: auto;
+  width: 100%;
 }
 
 .active {
@@ -418,7 +447,7 @@ h5 {
 }
 
 .hidden {
-  display:none;
+  display: none;
 }
 
 .left {
@@ -430,8 +459,8 @@ h5 {
 }
 
 .invisible {
-visibility: hidden;
-opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .visible {
@@ -439,11 +468,11 @@ opacity: 0;
   opacity: 1;
 }
 
-.transition{
+.transition {
   -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition:all 0.25s ease-in-out;
-    -o-transition:all 0.25s ease-in-out;
-    transition:all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 #dataForm:last-child {
@@ -489,7 +518,7 @@ opacity: 0;
   position: absolute;
   top: -0.38rem;
   left: 0.75rem;
-  height: 0.5rem;
+  height: 0.45rem;
   padding: 0rem 0.2rem;
 }
 
